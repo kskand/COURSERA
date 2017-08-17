@@ -1,0 +1,10 @@
+# function that reverses a string by characters 
+reverse_char <- function(string)
+{
+  x=nchar(string)
+  string_split= strsplit(string,'')
+  reverse= string_split[[1]][x:1]
+  paste(reverse,collapse = "")
+}
+reverse_char('12345')
+lapply(c("the big bang theory", "atmosphere"), reverse_char)
